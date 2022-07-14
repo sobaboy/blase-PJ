@@ -71,17 +71,21 @@ body {
 .cbx {
    position: absolute;
    display: flex;
-   width: 90%;
-   margin: 130px;
+   width: 50%;
+   right: 50%;
+   top: 50%;
+   transform: translate(50%,30%);
    align-items: center;
+   justify-content: center;
 
 }
 
 /* 굿즈 개별박스 공통 */
 .cat {
    position: relative;
-   width: 24%;
-   margin: 0 .5%;
+   height: 100%;
+   width: 100%;
+   margin: 0 auto;
    padding-bottom: 10px;
 }
 
@@ -90,6 +94,7 @@ body {
    /* 트랜지션: 속시이지 */
    transition: .4s ease-in-out;
 }
+
 
 /* 굿즈 lv1 이미지 박스 */
 .lv1 {
@@ -102,44 +107,39 @@ body {
    width: 80%;
    height: 100%;
 }
-
 /* 굿즈 lv2 이미지 박스 */
 .lv2 {
    display: flex;
-}
-
-.lv2>img {
-   margin-top: 50px;
-   margin-left: 10px;
-   width: 50%;
-   height: 200px;
-}
-
-/* 굿즈 lv3 이미지 박스 */
-.lv3 {
-   display: flex;
-   flex-wrap: wrap;
-   align-items: center;
+   margin-top: 60px;
    justify-content: center;
 }
 
-.lv3>img {
-   margin: 10px 10px;
-   width: 40%;
-   height: 100px;
+.lv2>img {
+   width: 80%;
+   height: 100%;
 }
-
-/* 굿즈 lv4 이미지 박스 */
+/* 굿즈 lv1 이미지 박스 */
+.lv3 {
+   display: flex;
+   margin-top: 60px;
+   justify-content: center;
+}
+.lv3>img {
+   width: 80%;
+   height: 100%;
+}
+/* 굿즈 lv1 이미지 박스 */
 .lv4 {
    display: flex;
-   flex-wrap: wrap;
+   margin-top: 60px;
+   justify-content: center;
 }
 
 .lv4>img {
-   margin: 10px 10px;
-   width: 40%;
-   height: 100px;
+   width: 80%;
+   height: 100%;
 }
+
 
 /* .cat에 오버시 .ci변경 */
 .cat:hover .ci {
